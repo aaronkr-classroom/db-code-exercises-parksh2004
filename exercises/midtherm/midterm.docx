@@ -111,11 +111,13 @@ No.
 고객 데이터 1개 삽입
 전체 고객 조회
 CREATE TABLE Customer (
-______________________________
+  customer_id SERIAL PRIMARY KEY,
+  name  VARCHAR(100),
+  phone_num  NUMBER(11)
 );
 
 INSERT INTO Customer VALUES (
-______________________________
+  1, "박상현", 01076285415
 );
 
 SELECT * FROM Customer;
